@@ -28,7 +28,7 @@ Perform regression using MLP on the dataset with the help of [functional API](ht
 - Plot the training and validation loss as a function of the number of epochs used to train
 - Print the train and validation MSE
 
-## Lab3: Back-propagation in action
+## Lab 3: Back-propagation in action
 The aim of this lab is to implement back-propagation using the tensorflow.keras library. We will be using a modified neural network architecture as shown below: 
 
 ![](https://static.us.edusercontent.com/files/dLC5azkodx7hgP5DzY3g9G3u)
@@ -44,3 +44,19 @@ The aim of this lab is to implement back-propagation using the tensorflow.keras 
 - Use the keras `get_weights()` and `set_weights()` functions to update the weights with the gradients and make sure to use a small learning rate to do so.
 - Once you've ensured that your update step works correctly, run several such updates and store the loss after each update in a separate list.
 - After the loss reduces to a significantly low value (< $10^{-3}$), again visualize the model predictions with the true function value.
+
+## Lab 4: Neural Network Regularization
+The aim of this lab is to understand regularization in Neural Networks. This is a continuation of the exercises worked out during the lecture with a twist. The goal remains the same, you need to regularize the model to an extent where the loss function of the regularized model on the test set is lower than that of the unregularised model. However, here we work with [MNIST data](http://yann.lecun.com/exdb/mnist/) and regularize a classification model.
+
+### Instructions:
+- Use the helper function get_data given to get the train and test data.
+- Split the train data into train and validation sets with 70% training data and random state as 40.
+- Plot any 9 images from the training data.
+- Define a feedforward neural network to fit the train and validation data with:
+  - 3 hidden layers with 200 nodes each with Relu activation.
+  - The output layer has one node with sigmoid as the activation function.
+  - Adam is the optimizer with binary_crossentropy as the loss function and accuracy as the metric.
+  - Train for 1000 epochs with a batch size of 64.
+- Plot the train and validation accuracy and loss.
+- Compute the accuracy of the model on the test data.
+- Do steps 4 to 6 by building the same neural network with different regularization techniques.
