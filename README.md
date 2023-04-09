@@ -43,4 +43,4 @@ The aim of this lab is to implement back-propagation using the tensorflow.keras 
 - Use tensorflow's [GradientTape()](https://www.tensorflow.org/api_docs/python/tf/GradientTape) to compute the gradient of the loss with respect to the weights of the model.
 - Use the keras `get_weights()` and `set_weights()` functions to update the weights with the gradients and make sure to use a small learning rate to do so.
 - Once you've ensured that your update step works correctly, run several such updates and store the loss after each update in a separate list.
-- After the loss reduces to a significantly low value (< 10^{-3}), again visualize the model predictions with the true function value.
+- After the loss reduces to a significantly low value (< $10^{-3}$), again visualize the model predictions with the true function value.
