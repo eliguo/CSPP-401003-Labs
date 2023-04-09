@@ -1,4 +1,6 @@
 # CSPP-401003-Labs
+**Instructor**: Prof. Pavlos Protopapas
+**Teaching Assistants**: Hongda Liu, Haoyu Du, Ruiyuan Zhang, Varshini Reddy, Vishnu M
 
 ## Lab 1: MLP for Regression
 The aim of this lab is to get you familiar with Google Colab and Tensorflow.Keras. Go to the following [link](https://drive.google.com/file/d/1lYZPoDGzyjHlNO4rMgpeuJtw7R1m_9OW/view) to access the colab notebook.
@@ -13,8 +15,10 @@ The aim of this lab is to get you familiar with Google Colab and Tensorflow.Kera
 
 ## Lab 2: Neural Networks with Functional API
 In this lab, we will use the `real_estate` dataset that is given to you as `real_estate_1.csv` and `real_estate_2.csv`.  
-This dataset provides a number of features that eventually lead to predicting the prices of the houses. To demonstrate that the functional API in Keras can take multiple inputs we have divided the file dataset into two CSV files.  
-Perform regression using MLP on the dataset with the help of [functional API](https://www.tensorflow.org/guide/keras/functional).
+
+As you might remember, this dataset provides a number of features that eventually lead to predicting the prices of the houses. To demonstrate that the functional API in Keras can take multiple inputs we have divided the file dataset into two CSV files.  
+
+Based on what you have learnt in Session, perform regression using MLP on the dataset with the help of [functional API](https://www.tensorflow.org/guide/keras/functional).
 
 ### Instructions:
 - Read both the datasets into two separate dataframes `df_1` and `df_2`
@@ -60,3 +64,24 @@ The aim of this lab is to understand regularization in Neural Networks. This is 
 - Plot the train and validation accuracy and loss.
 - Compute the accuracy of the model on the test data.
 - Do steps 4 to 6 by building the same neural network with different regularization techniques.
+
+## Lab 5: Lab Exercise: Convolution Mechanics
+The aim of this lab is to understand the tensorflow.keras implementation of 2D Convolution
+
+![](https://static.us.edusercontent.com/files/TnNRRwL6n1BhzEtu6F8fXGkP)
+
+We will perform convolution using different kernels for:
+- Blurring
+- Sharpening
+- Vertical Edge Detection
+- Horizontal Edge Detection
+- Edge Detection
+
+The above are just a few examples of effects achievable by convolving kernels and images.
+
+### Instructions:
+- Use the helper code given to build a barebones CNN with only one convolution layer and a single filter.
+- Run the provided single-channel image through this model and you should expect random output as your kernels are randomly intialized.
+- For each of the the above provided kernels: 
+  - Use the tf.keras.set_weights() function to set the appropriate kernel weights.
+  - Pass your image through the modified model and observe the outputs
