@@ -1,5 +1,5 @@
 # CSPP-401003-Labs
-**Instructor**: Prof. Pavlos Protopapas
+**Instructor**: Prof. Pavlos Protopapas  
 **Teaching Assistants**: Hongda Liu, Haoyu Du, Ruiyuan Zhang, Varshini Reddy, Vishnu M
 
 ## Lab 1: MLP for Regression
