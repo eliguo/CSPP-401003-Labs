@@ -65,7 +65,7 @@ The aim of this lab is to understand regularization in Neural Networks. This is 
 - Compute the accuracy of the model on the test data.
 - Do steps 4 to 6 by building the same neural network with different regularization techniques.
 
-## Lab 5: Lab Exercise: Convolution Mechanics
+## Lab 5: Convolution Mechanics
 The aim of this lab is to understand the tensorflow.keras implementation of 2D Convolution
 
 ![](https://static.us.edusercontent.com/files/TnNRRwL6n1BhzEtu6F8fXGkP)
@@ -85,3 +85,27 @@ The above are just a few examples of effects achievable by convolving kernels an
 - For each of the the above provided kernels: 
   - Use the tf.keras.set_weights() function to set the appropriate kernel weights.
   - Pass your image through the modified model and observe the outputs
+
+## Lab 6: Image Occlusion
+The aim of this Lab is to understand occlusion. Each pixel in an image has varying importance for the classification of the image. Occlusion involves running a patch over the entire image to see which pixels affect the classification the most.
+
+![](https://static.us.edusercontent.com/files/ICQsxfxjDM0KDgEz10yT5jv8)
+
+### Instructions:
+- Complete the given function `load_dataset()`
+- Define a convolutional neural network based on the architecture mentioned in the scaffold.
+- Take a quick look at the model architecture using `model.summary()`.
+- Load the trained model weights given in the `occlusion_model_weights.h5` file.
+- We have provided a helper function, `apply_grey_patch()`.
+- Complete the given function occlusion to visualize the delta loss as a mask moves across the image. The output should look similar to the one shown below.
+
+![](https://static.us.edusercontent.com/files/CkHEIUwxmOI48MRDgYe6pus5)
+
+⏸️ Call the function `occlusion()` with the following parameters: trained model, a valid image number within 50, and occlusion patch size to test it out. 
+
+⏸️ Do the same with the following image numbers 10, 12, and 35. What do you observe based on the occlusion map plotted for each image?  
+A. The images are blurred more as compared to other images in the set.  
+B. The images are incorrectly predicted because the model weights the wrong parts of the image to make the prediction.  
+C. The images are correctly predicted as the network is giving high importance to the most telling features of the images.  
+
+⏸️ Call the function `occlusion()` with images 1, 15, and 30. What do you observe based on the plots?
