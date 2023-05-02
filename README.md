@@ -109,3 +109,21 @@ B. The images are incorrectly predicted because the model weights the wrong part
 C. The images are correctly predicted as the network is giving high importance to the most telling features of the images.  
 
 ⏸️ Call the function `occlusion()` with images 1, 15, and 30. What do you observe based on the plots?
+
+### Visualizing the receptive field via Backpropagation
+The aim of this lab is to understand and implement backpropagation in convolutional neural networks. 
+
+Like the previous lab, for each pixel of the selected activation map, we first find the image that activates that pixel the most. Then we compute the derivative of that pixel with respect to the input image. 
+
+![](https://static.us.edusercontent.com/files/ihwquf8J4AvfQGNgs6AMQB2U)
+
+### Instructions:
+- Define the model based on the architecture mentioned in the scaffold.
+- Load the pre-trained weights from the *receptive_field_weights.h5* file.
+- Load all the images in the *cifar* folder provided using the `load_image` function.
+- Select a convolution layer and an activation map within it to visualize the receptive field of each pixel of the activation map.
+- Find out by running all the images through the defined CNN model which image activates a pixel in the selected activation map the most.
+- Save this pixel-wise image information in the `best_img` dictionary.
+- Use the helper code to modify the activations in each convolution layer to perform back-propagation
+- Use `**tf.GradientTape()**` to perform the back-propagation of the selected pixel with respect to the image that most activates it.
+- Visualize the gradients with the help of the `deprocess_image()` function provided for each pixel in the activation map.
