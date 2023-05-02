@@ -125,5 +125,5 @@ Like the previous lab, for each pixel of the selected activation map, we first f
 - Find out by running all the images through the defined CNN model which image activates a pixel in the selected activation map the most.
 - Save this pixel-wise image information in the `best_img` dictionary.
 - Use the helper code to modify the activations in each convolution layer to perform back-propagation
-- Use `**tf.GradientTape()**` to perform the back-propagation of the selected pixel with respect to the image that most activates it.
+- Use **`tf.GradientTape()`** to perform the back-propagation of the selected pixel with respect to the image that most activates it.
 - Visualize the gradients with the help of the `deprocess_image()` function provided for each pixel in the activation map.
