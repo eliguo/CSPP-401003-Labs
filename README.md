@@ -127,8 +127,3 @@ Like the previous lab, for each pixel of the selected activation map, we first f
 - Use the helper code to modify the activations in each convolution layer to perform back-propagation
 - Use **`tf.GradientTape()`** to perform the back-propagation of the selected pixel with respect to the image that most activates it.
 - Visualize the gradients with the help of the `deprocess_image()` function provided for each pixel in the activation map.
-
-## Homework Challenge
-In this homework, we will explore Convolutional Neural Networks (CNNs). We will begin by building a CNN to classify Architectural Heritage Elements, a standard pedagogical problem, and use saliency maps to understand what the network is paying attention to. We will then see that CNNs aren't just for classifying. They can serve as image input processing for a variety of tasks, as we will show by training a network to rotate faces upright.
-
-Convolutional neural networks are computationally intensive. We highly recommend that you train your model on a system using GPUs (take a look at Google Colab's runtime settings for accessing a GPU environment free of cost). On CPUs, this training can take over an hour. On GPUs, it can be done within minutes. If you become frustrated having to rerun your model every time you open your notebook, take a look at how to save your model weights as explicitly detailed in Part 2, where it is required to save your weights.
