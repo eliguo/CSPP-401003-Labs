@@ -1,6 +1,6 @@
-# CSPP-401003-Labs
+# PACSPP-401003-Labs  
+**PACSPP - 401003**: Introduction to Neural Networks  
 **Instructor**: Prof. Pavlos Protopapas  
-**Teaching Assistants**: Hongda Liu, Haoyu Du, Ruiyuan Zhang, Varshini Reddy, Vishnu M
 
 ## Lab 1: MLP for Regression
 The aim of this lab is to get you familiar with Google Colab and Tensorflow.Keras. Go to the following [link](https://drive.google.com/file/d/1lYZPoDGzyjHlNO4rMgpeuJtw7R1m_9OW/view) to access the colab notebook.
