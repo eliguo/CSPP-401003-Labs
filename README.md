@@ -1,5 +1,5 @@
 # PACSPP-401003-Labs  
-**PACSPP - 401003**: Introduction to Neural Networks  
+**PACSPP-401003**: Introduction to Neural Networks  
 **Instructor**: Prof. Pavlos Protopapas  
 
 ## Lab 1: MLP for Regression
